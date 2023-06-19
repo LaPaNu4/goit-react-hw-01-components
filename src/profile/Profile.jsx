@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Profilesss, Info, List, Item } from '../components/App.styled';
 import user from '../user.json';
 
+
 export const Profile = () => {
   const { username, tag, location, avatar, stats } = user;
 
