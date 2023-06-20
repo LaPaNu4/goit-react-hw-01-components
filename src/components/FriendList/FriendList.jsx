@@ -2,17 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FriendDiv, List, Item, Span } from './FriendList.styled';
 export const FriendList = ({ friends }) => {
-
   return (
     <FriendDiv>
       <List>
         {friends.map(friend => {
-           const spanStyle = {
-             background: friend.isOnline ? '#24f101' : 'red', // Зелений колір для онлайн, червоний для офлайн
-           };
           return (
             <Item key={friend.id}>
-              <Span style={spanStyle}>{friend.isOnline}</Span>
+              <Span isOnline={friend.isOnline}>{friend.isOnline}</Span>
               <img
                 className="avatar"
                 src={friend.avatar}

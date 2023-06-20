@@ -30,5 +30,5 @@ export const Span = styled.span`
 width: 15px;
 height: 15px;
 border-radius: 50%;
-background: red;
+background: ${(props) => (props.isOnline ? '#24f101' : 'red' )}
 `

@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Profilesss, Info, List, Item } from '../components/App.styled';
-import user from '../user.json';
+
+import { Profilesss, Info, List, Item } from '../App.styled';
 
 
-export const Profile = () => {
-  const { username, tag, location, avatar, stats } = user;
+export const Profile = ({ username, tag, location, avatar, stats }) => {
 
   return (
     <Profilesss>

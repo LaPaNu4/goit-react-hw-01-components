@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StatisticsSect, Item, List, Title } from './Statist.styled';
+import { StatisticsSect, Item, List, Title } from './Statistics.styled';
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsSect>

@@ -1,14 +1,14 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
-import { Profile } from '../profile/Profile';
-import user from '../user.json';
+import user from './data/user.json';
+import data from './data/data';
+import friends from './data/friends';
+import transactions from './data/transactions';
+
+import { Profile } from './profile/Profile';
 import { Section } from './App.styled';
-import { Statistics } from 'Statistics/Statist';
-import data from '../data';
-import friends from '../friends'
-import { FriendList } from '../FriendList/FriendList.jsx';
-import { TransactionDiv } from 'TransactionHistory/TransactionHistory';
-import transactions from '../transactions'
+import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList.jsx';
+import { TransactionDiv } from './TransactionHistory/TransactionHistory';
+
 export const App = () => {
   return (
     <>
