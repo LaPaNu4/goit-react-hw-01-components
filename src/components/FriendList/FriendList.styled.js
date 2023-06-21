@@ -27,8 +27,16 @@ export const Item = styled.li`
 `;
 
 export const Span = styled.span`
-width: 15px;
-height: 15px;
-border-radius: 50%;
-background: ${(props) => (props.isOnline ? '#24f101' : 'red' )}
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: ${props => (props.isOnline ? '#24f101' : 'red')};
+`;
+export const Name = styled.p`
+
 `
+export const Avatar = styled.img`
+src: ${(props)=>props.Avatar};
+ alt:"User avatar" ;
+ width:48px;
+`;

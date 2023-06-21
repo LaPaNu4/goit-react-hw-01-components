@@ -1,22 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FriendDiv, List, Item, Span } from './FriendList.styled';
+import { FriendListItem } from './FriendListItem';
+import { FriendDiv, List } from './FriendList.styled';
+
 export const FriendList = ({ friends }) => {
   return (
     <FriendDiv>
       <List>
         {friends.map(friend => {
           return (
-            <Item key={friend.id}>
-              <Span isOnline={friend.isOnline}>{friend.isOnline}</Span>
-              <img
-                className="avatar"
-                src={friend.avatar}
-                alt="User avatar"
-                width="48"
-              />
-              <p className="name">{friend.name}</p>
-            </Item>
+            <FriendListItem
+              key={friend.id}
+              avatar={friend.avatar}
+              name={friend.name}
+              isOnline={friend.isOnline}
+            />
           );
         })}
       </List>
